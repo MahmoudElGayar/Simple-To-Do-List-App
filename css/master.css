@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap");
+
+/* Start Variables */
+:root {
+	--main-color: #f53939;
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: poppins, sans-serif;
+	background-color: #000;
+}
+
+.container {
+	padding: 0px 15px;
+	margin: 0px auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+	.container {
+		width: 970px;
+	}
+}
+
+/* Medium */
+@media (min-width: 992px) {
+	.container {
+		width: 970px;
+	}
+}
+
+/* Large */
+@media (min-width: 1200px) {
+	.container {
+		width: 1170px;
+	}
+}
+
+/* End Global Rules */
+.container {
+	background-color: #459989;
+	height: 550px;
+	width: 400px;
+	margin-top: 30px;
+	border-radius: 6px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+}
+
+.container  .form {
+	padding: 10px;
+	position: relative;
+	width: 100%;
+}
+
+.container .form input {
+	border: none;
+	padding: 10px;
+	caret-color: #459989;
+	width: 100%;
+	padding: 20px;
+	outline: none;
+	border-radius: 50px;
+}
+::placeholder {
+	color: #162925;
+}
+.container .form button {
+	background-color: rgb(0, 0, 0);
+	border: none;
+	position: absolute;
+	color: #fff;
+	right: 17px;
+	top: 28%;
+	border-radius: 50px;
+	padding: 10px;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.error {
+	display: inline-block ;
+	color: red ;
+	background-color: #fff !;
+	padding: 0px 10px ;
+	border-radius: 2px ;
+}
+
+.container .form button:hover {
+	background-color: #459989;
+}
+
+.container h1 {
+	letter-spacing: 1px;
+	color: #fff;
+}
+
+.error {
+	display: none;
+}
+
+.container h2 {
+	font-weight: 500;
+}
+
+.container .tasks {
+	background-color: #fff;
+	width: 100%;
+	border-radius: inherit;
+	padding: 10px;
+	height: 100%;
+	overflow: auto;
+}
+
+.container .tasks .task {
+	border: 2px solid;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.container .tasks .task i {
+	background-color: #000;
+	color: #fff;
+	border-radius: 5px;
+	padding: 6px;
+	transition: .2s;
+	cursor: pointer;
+}
+
+.container .tasks .task i:hover {
+	background-color: #f00;
+}
+
+
